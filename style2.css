@@ -1,0 +1,78 @@
+body {
+  background-image: url(./images/background-login.jpg);
+  background-position: center;
+    background-size: cover;
+  
+}
+#regestration {
+  border: 1px solid;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+}
+h2 {
+  text-align: center;
+}
+button {
+  padding: 10px;
+}
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+#dhac {
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+#btn_signup {
+  width: 210px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+#btn_signup:hover {
+  background-color: green;
+  color: white;
+}
+#btn_signin {
+  width: 100px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+#btn_guest {
+  border-radius: 5px;
+  background-color: transparent;
+}
+#alrd {
+  border-radius: 5px;
+  width: 210px;
+  background-color: transparent;
+}
+#alrd:hover {
+  background-color: rgb(16, 118, 220);
+  color: white;
+}
+#btn_signin:hover {
+  background-color: green;
+  color: white;
+}
+#btn_guest:hover {
+  background-color: green;
+  color: white;
+}
+#dhac:hover {
+  background-color: rgb(16, 118, 220);
+  color: white;
+}
+.carousel slide{
+    
+}
