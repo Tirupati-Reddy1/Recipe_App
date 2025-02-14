@@ -4,64 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .navbar-brand {
-        color: #d2691e;
-        font-family: "Brush Script MT", cursive;
-        font-size: 30px;
-        margin-left: 10px;
-      }
-      #search {
-        height: 30px;
-        border-radius: 20px;
-        width: 30%;
-      }
-      #img {
-        height: 100%;
-        width: 100%;
-        border-radius: 15px;
-      }
-      #container1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .non-veg {
-        height: 300px;
-        border: 2px solid;
-        width: 350px;
-        padding: 10px;
-        margin-top: 60px;
-        border: none;
-        border-radius: 5px;
-      }
-      .btn-nonveg {
-        position: relative;
-        top: -40px;
-        border-radius: 20px;
-        width: 90px;
-        left: 35%;
-        background-color: white;
-
-        color: rgb(47, 7, 193);
-      }
-      .btn-nonveg:active {
-        background-color: skyblue;
-      }
-      #non-veg {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        overflow: hidden;
-      }
-      #Veg-Items{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: -20px;
-      }
-      
-    </style>
+    <link rel="stylesheet" href="Home_Style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -164,30 +107,32 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div id="items">
+    
+     
       <h2
         style="
           text-align: center;
           font-family: 'Playfair Display', serif;
-          margin-top: 30px;
+          margin-top:20px;
         "
       >
         Non Veg
       </h2>
+      
       <div id="container1">
         <div class="non-veg">
           <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
             Hyderabad Chicken Dum Biryani
           </h5>
           <img src="./images/hyd dum b.jpg" alt="" id="img" />
-          <button class="btn-nonveg" id="btn-dum-b">click here</button>
+          <button class="btn-nonveg" id="btn-Hyd-dum-b">click here</button>
         </div>
         <div class="non-veg">
           <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
             Dum Chicken Biryani
           </h5>
           <img src="./images/dum b.jpg" alt="" id="img" />
-          <button class="btn-nonveg" id="btn-hyd-dum-b">click here</button>
+          <button class="btn-nonveg" id="btn-dum-b">click here</button>
         </div>
         <div class="non-veg">
           <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -225,48 +170,86 @@
           <button class="btn-nonveg" id="btn-mutton-b">click here</button>
         </div>
       </div>
-    </div>
-    <h2
-        style="
-          text-align: center;
-          font-family: 'Playfair Display', serif;
-          margin-top: 60px;
-        "
-      >
-        Veg Items
-      </h2>
     
+    <h2
+      style="
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        margin-top: 60px;
+      "
+    >
+      Veg Items
+    </h2>
+
     <div id="Veg-Items">
+      <div class="non-veg">
+        <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
+          Mushroom Curry
+        </h5>
+        <img src="./images/mashroom curry.jpg" alt="" id="img" />
+        <button class="btn-nonveg" id="btn-dum-b">click here</button>
+      </div>
+      <div class="non-veg">
+        <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
+          Mushroom Fry
+        </h5>
+        <img src="./images/mashrrom fry.jpg" alt="" id="img" />
+        <button class="btn-nonveg" id="btn-hyd-dum-b">click here</button>
+      </div>
+      <div class="non-veg">
+        <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
+          Paneer Butter Masala
+        </h5>
+        <img src="./images/paneer-butter-masala.jpg" alt="" id="img" />
+        <button class="btn-nonveg" id="btn-kolkatta-b">click here</button>
+      </div>
+      <div class="non-veg">
+        <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
+          Paneer Tikka
+        </h5>
+        <img src="./images/paneer tikka.jpg" alt="" id="img" />
+        <button class="btn-nonveg" id="btn-chicken-cu">click here</button>
+      </div>
+    </div>
+    <div id="copyright">
+      Designed By @Reddy_Tirupati
+    </div>
+    <script>
+      let btn_Hyd_dum_b=document.getElementById("btn-Hyd-dum-b");
+      btn_Hyd_dum_b.addEventListener("click",()=>{
+        location.assign("Hyd_Chicken_b.html")
+      })
+
+      let btn_dum_b=document.getElementById("btn-dum-b");
+      btn_dum_b.addEventListener("click",()=>{
+        location.assign("Hyd_Chicken_b.html")
+      })
+      let btn_kolkatta_b=document.getElementById("btn-kolkatta-b");
+      btn_kolkatta_b.addEventListener("click",()=>{
+        location.assign("Kolkatta_chi_b.html")
+      })
+
+      let btn_chicken_cu= document.getElementById("btn-chicken-cu");
+      btn_chicken_cu.addEventListener("click",()=>{
+        location.assign("Kolkatta_chi_b.html")
+      })
+
+      let btn_fish_cu= document.getElementById("btn-fish-cu");
+      btn_fish_cu.addEventListener("click",()=>{
+        location.assign("Kolkatta_chi_b.html")
+      })
+      let btn_mutton_cu= document.getElementById("btn-mutton-cu");
+      btn_mutton_cu.addEventListener("click",()=>{
+        location.assign("Kolkatta_chi_b.html")
+      })
+
+      let btn_mutton_b= document.getElementById("btn-mutton-b");
+      btn_mutton_b.addEventListener("click",()=>{
+        location.assign("Kolkatta_chi_b.html")
+      })
       
-    <div class="non-veg">
-      <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
-        Mushroom Curry
-      </h5>
-      <img src="./images/mashroom curry.jpg" alt="" id="img" />
-      <button class="btn-nonveg" id="btn-dum-b">click here</button>
-    </div>
-    <div class="non-veg">
-      <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
-        Mushroom Fry
-      </h5>
-      <img src="./images/mashrrom fry.jpg" alt="" id="img" />
-      <button class="btn-nonveg" id="btn-hyd-dum-b">click here</button>
-    </div>
-    <div class="non-veg">
-      <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
-        Paneer Butter Masala
-      </h5>
-      <img src="./images/paneer-butter-masala.jpg" alt="" id="img" />
-      <button class="btn-nonveg" id="btn-kolkatta-b">click here</button>
-    </div>
-    <div class="non-veg">
-      <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
-        Paneer Tikka
-      </h5>
-      <img src="./images/paneer tikka.jpg" alt="" id="img" />
-      <button class="btn-nonveg" id="btn-chicken-cu">click here</button>
-    </div>
-    </div>
-    <div id="footer"></div>
+
+
+    </script>
   </body>
 </html>

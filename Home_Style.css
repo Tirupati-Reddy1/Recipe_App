@@ -1,0 +1,69 @@
+.navbar-brand {
+    color: #d2691e;
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #search {
+    height: 30px;
+    border-radius: 20px;
+    width: 30%;
+  }
+  #img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
+  #container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    
+    
+  }
+  .non-veg {
+    height: 300px;
+    border: 2px solid;
+    width: 350px;
+    padding: 10px;
+    margin-top: 60px;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn-nonveg {
+    position: relative;
+    top: -40px;
+    border-radius: 20px;
+    width: 90px;
+    left: 35%;
+    background-color: white;
+
+    color: rgb(47, 7, 193);
+  }
+  .btn-nonveg:active {
+    background-color: skyblue;
+  }
+  #non-veg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  #Veg-Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -50px;
+    
+  }
+  #copyright {
+    background-color: rgba(119, 197, 246, 0.507);
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 

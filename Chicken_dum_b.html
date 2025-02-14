@@ -146,7 +146,7 @@
   <body>
     <h2 id="title"></h2>
     <div id="img-div">
-      <img src="./images/hyd dum b.jpg" alt="" id="image" />
+      <img src="./images/dum b.jpg" alt="" id="image" />
     </div>
 
     <div id="ingredients-div">
@@ -176,13 +176,13 @@ location.assign("home.html")
           // console.log(res[1].nutrition);
           let title = document.getElementById("title");
 
-          title.innerHTML = res[0].type;
+          title.innerHTML = res[1].type;
           let ingredients = document.getElementById("ingredients");
-          ingredients.innerHTML = res[0].ingredients;
+          ingredients.innerHTML = res[1].ingredients;
           let making_process = document.getElementById("making_process");
-          making_process.innerHTML = res[0].process;
+          making_process.innerHTML = res[1].process;
           let nutrition = document.getElementById("nutrition");
-          nutrition.innerHTML = res[0].nutrition;
+          nutrition.innerHTML = res[1].nutrition;
         });
         
       
