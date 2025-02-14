@@ -25,7 +25,7 @@ alrd.addEventListener("click", () => {
 });
 
 guestmode.addEventListener("click",()=>{
-    location.assign("home.html");
+    location.assign("loading_effect.html");
 })
 
 signinform.addEventListener("submit",(e)=>{
@@ -35,7 +35,7 @@ signinform.addEventListener("submit",(e)=>{
   signInWithEmailAndPassword(auth, email, password).then((x)=>{
     if(x.user){
         alert("Signed In Succesfully");
-        location.assign("home.html")
+        location.assign("loading_effect.html")
     }
   }).catch((e)=>{console.log(e),alert("You Dont Have Account Please Register")})
 
