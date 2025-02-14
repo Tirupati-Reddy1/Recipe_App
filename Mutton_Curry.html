@@ -95,16 +95,18 @@
         font-family: "Poppins", sans-serif;
         font-weight: 400;
       }
-      #btn{
+      #btn {
         width: 80px;
         border: none;
         box-shadow: 0 0 10px;
         border-radius: 5px;
-       
+
         display: block;
-  margin: auto;
-  margin-top: 20px;
-        
+        margin: auto;
+        margin-top: 20px;
+      }
+      #btn:active {
+        transform: scale(1.2);
       }
       @media (max-width: 480px) {
         #image {
@@ -165,9 +167,9 @@
     <button id="btn">Go Back</button>
 
     <script>
-      let btn=addEventListener("click",()=>{
-location.assign("home.html")
-      })
+      let btn = addEventListener("click", () => {
+        location.assign("home.html");
+      });
       let data = fetch("https://679ba48e33d3168463249d82.mockapi.io/items");
       data
         .then((x) => x.json())
@@ -184,8 +186,6 @@ location.assign("home.html")
           let nutrition = document.getElementById("nutrition");
           nutrition.innerHTML = res[5].nutrition;
         });
-        
-      
     </script>
   </body>
 </html>

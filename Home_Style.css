@@ -39,12 +39,19 @@
     width: 90px;
     left: 35%;
     background-color: white;
+    border: none;
 
     color: rgb(47, 7, 193);
   }
+  .btn-nonveg:hover{
+    transform: scale(1.1);
+  }
   .btn-nonveg:active {
     background-color: skyblue;
+    transform: scale(1.2);
   }
+  
+  
   #non-veg {
     display: flex;
     flex-wrap: wrap;
@@ -66,4 +73,32 @@
     justify-content: center;
     align-items: center;
   }
+  #about{
+    width: 80%;
+    border: 2px solid;
+    margin-left: 60px;
+    margin-top: 60px;
+    border: none;
+    background-color: rgb(230, 233, 238);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#about_heading{
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 30px;
+
+}
+#about_details{
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 35px;
+}
+@media (min-width:0px) and (max-width:480px) {
+  #about{
+    margin: auto;
+    margin-top: 60px;
+    width: 90%;
+  }
+}
  
