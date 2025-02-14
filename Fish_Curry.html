@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #title {
+        font-family: "Baloo 2", cursive;
+        font-weight: 800;
+        text-align: center;
+
+        color: #982b0a;
+        /* color: #FF5722; */
+        /* color: #E64A19; */
+        /* color: #FF9800;  */
+        margin-top: 20px;
+      }
+      #image {
+        /* height: 50vh;
+        width: ; */
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 5px;
+      }
+      #img-div {
+        height: 70%;
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+        border-radius: 15px;
+        border: none;
+      }
+      #ingredients {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400; /* Regular for readability */
+      }
+      #ingredients-div {
+        height: 50%;
+        width: 60%;
+        border: 2px solid;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        background-color: rgb(240, 233, 233);
+        box-shadow: 0 0 10px;
+        border: none;
+        color: rgb(85, 14, 29);
+      }
+      #making_process-div {
+        height: 50%;
+        width: 60%;
+        border: 2px solid;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        background-color: rgb(240, 233, 233);
+        box-shadow: 0 0 10px;
+        border: none;
+        color: rgb(85, 14, 29);
+        padding: 10px;
+      }
+      #making_process {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        text-align: justify;
+      }
+      #nutrition-div {
+        height: 50%;
+        width: 60%;
+        border: 2px solid;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        background-color: rgb(240, 233, 233);
+        box-shadow: 0 0 10px;
+        border: none;
+        color: rgb(85, 14, 29);
+        padding: 10px;
+      }
+      #nutrition {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+      }
+      #btn{
+        width: 80px;
+        border: none;
+        box-shadow: 0 0 10px;
+        border-radius: 5px;
+       
+        display: block;
+  margin: auto;
+  margin-top: 20px;
+        
+      }
+      @media (max-width: 480px) {
+        #image {
+          height: 50%;
+          width: 100%;
+          border-radius: 15px;
+          box-shadow: 0 0 5px;
+        }
+        #img-div {
+          height: 100%;
+          width: 100%;
+
+          margin-top: 30px;
+          border-radius: 15px;
+          border: none;
+        }
+        #title {
+          font-size: 20px;
+        }
+        #ingredients-div {
+          height: 50%;
+          width: 60%;
+          border: 2px solid;
+          border-radius: 10px;
+
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+          margin-top: 40px;
+          background-color: rgb(240, 233, 233);
+          box-shadow: 0 0 10px;
+          border: none;
+          color: rgb(85, 14, 29);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="title"></h2>
+    <div id="img-div">
+      <img src="./images/fish curry.jpg" alt="" id="image" />
+    </div>
+
+    <div id="ingredients-div">
+      <h2>Ingredients</h2>
+      <p id="ingredients"></p>
+    </div>
+
+    <div id="making_process-div">
+      <h2>Making Process</h2>
+      <p id="making_process"></p>
+    </div>
+    <div id="nutrition-div">
+      <h2>Nutrition Values</h2>
+      <p id="nutrition"></p>
+    </div>
+    <button id="btn">Go Back</button>
+
+    <script>
+      let btn=addEventListener("click",()=>{
+location.assign("home.html")
+      })
+      let data = fetch("https://679ba48e33d3168463249d82.mockapi.io/items");
+      data
+        .then((x) => x.json())
+        .then((x) => {
+          let res = x;
+          // console.log(res[1].nutrition);
+          let title = document.getElementById("title");
+
+          title.innerHTML = res[4].type;
+          let ingredients = document.getElementById("ingredients");
+          ingredients.innerHTML = res[4].ingredients;
+          let making_process = document.getElementById("making_process");
+          making_process.innerHTML = res[4].process;
+          let nutrition = document.getElementById("nutrition");
+          nutrition.innerHTML = res[4].nutrition;
+        });
+        
+      
+    </script>
+  </body>
+</html>
