@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #searchBox {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #results {
+            width: 300px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+            display: none;
+        }
+        .result-item {
+            padding: 10px;
+            cursor: pointer;
+            background: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+        }
+        .result-item:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchBox" placeholder="Search here..." onkeyup="search()">
+    <div id="results"></div>
+    
+    <script>
+        const itemPages = {
+            "Apple": "apple.html",
+            "Banana": "banana.html",
+            "Cherry": "cherry.html",
+            "Date": "date.html",
+            "Grapes": "grapes.html",
+            "Mango": "mango.html",
+            "Orange": "orange.html",
+            "Pineapple": "pineapple.html",
+            "Strawberry": "strawberry.html"
+        };
+        
+        function search() {
+            let query = document.getElementById("searchBox").value.toLowerCase();
+            let resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            if (query.length === 0) {
+                resultsDiv.style.display = "none";
+                return;
+            }
+
+            let filteredItems = Object.keys(itemPages).filter(item => item.toLowerCase().includes(query));
+
+            if (filteredItems.length > 0) {
+                resultsDiv.style.display = "block";
+                resultsDiv.style.right = "0"; // Ensure dropdown aligns properly
+                filteredItems.forEach(item => {
+                    let div = document.createElement("div");
+                    div.classList.add("result-item");
+                    
+                    let link = document.createElement("a");
+                    link.href = itemPages[item];
+                    link.innerText = item;
+                    
+                    div.appendChild(link);
+                    resultsDiv.appendChild(div);
+                });
+            } else {
+                resultsDiv.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -38,7 +38,9 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">About</a>
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">Logout</a>
@@ -61,52 +63,26 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+          <input type="text" id="searchBox" placeholder="Search here..." onkeyup="search()">
+    <div id="results"></div>
           </form>
         </div>
       </div>
     </nav>
 
-    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <div id="carouselExampleAutoplay" class="carousel slide"  data-bs-ride="carousel" data-bs-interval="2000">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/biryaaani.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/chicken.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/veg2.jpg" class="d-block w-100" alt="..." />
-        </div>
+          <div class="carousel-item active">
+              <img src="./images/biryaaani.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+              <img src="./images/chicken.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+              <img src="./images/veg2.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleRide"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleRide"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+  </div>
 
     <h2
       style="
@@ -279,6 +255,45 @@
       btn_paneer_tikk.addEventListener("click", () => {
         location.assign("Paneer_Tikka.html");
       });
-    </script>
+      const itemPages = {
+            "Chicken Dum Biryani": "Chicken_dum_b.html",
+            "Chicken curry": "Chicken_curry.html",
+            "Hyd chicken Biryani": "Hyd_Chicken_b.html",
+            "Kolkatta": "Kolkatta_chi_b.html",
+            "Mushroom Fry": "Mushroom_Fry.html",
+            "Mushroom Curry": "Mushrrom_Curry.html",
+            "Mutton Biryani": "Mutton_Biryani.html",
+            "Mutton Curry": "Mutton_Curry.html",
+            "Paneer Butter Masala": "paneer_bt_masala.html",
+            "Paneer Tikka": "Paneer_Tikka.html"
+        };
+        
+        function search() {
+            let query = document.getElementById("searchBox").value.toLowerCase();
+            let resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            if (query.length === 0) {
+                resultsDiv.style.display = "none";
+                return;
+            }
+
+            let filteredItems = Object.keys(itemPages).filter(item => item.toLowerCase().includes(query));
+
+            if (filteredItems.length > 0) {
+                resultsDiv.style.display = "block";
+                resultsDiv.style.right = "0"; // Ensure dropdown aligns properly
+                filteredItems.forEach(item => {
+                    let div = document.createElement("div");
+                    div.classList.add("result-item");
+                    div.innerText = item;
+                    div.onclick = () => window.location.href = itemPages[item]; // Clicking anywhere redirects
+                    resultsDiv.appendChild(div);
+                });
+            } else {
+                resultsDiv.style.display = "none";
+            }
+        }
+    </script>    </script>
   </body>
 </html>
