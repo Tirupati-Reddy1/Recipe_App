@@ -18,6 +18,8 @@
     ></script>
   </head>
   <body>
+    
+  </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" style="color: #d2691e">Recipe App</a>
@@ -45,6 +47,7 @@
             <li class="nav-item">
               <a class="nav-link" href="messege.html">Contact Us</a>
             </li>
+            <button id="favourite_btn">Favourites</button>
             <li class="nav-item">
               <a class="nav-link" href="index.html">Log out</a>
             </li>
@@ -72,6 +75,87 @@
         </div>
       </div>
     </nav>
+    <div id="side_bar" >
+      <button id="btn_close">close</button><br>
+      <div class="fev_div" id="fev_div1">
+        <h4>Hyd Chicken B</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/hyd dum b.jpg" alt=""></div>
+          <button id="btn_remove1">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div2">
+        <h4>Chicken Dum B</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/dum b.jpg" alt=""></div>
+          <button id="btn_remove2">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div3">
+        <h4>Kolkata Chicken B</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/kolkatha b.jpg" alt=""></div>
+          <button id="btn_remove3">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div4">
+        <h4>Chicken Curry</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/chicken curry.jpg" alt=""></div>
+          <button id="btn_remove4">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div5">
+        <h4>Fish Curry</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/fish curry.jpg" alt=""></div>
+          <button id="btn_remove5">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div6">
+        <h4>Mutton Curry</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/mutton curry.jpg" alt=""></div>
+          <button id="btn_remove6">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div7">
+        <h4>Mutton Biryani</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/mutton-biryani.jpg" alt=""></div>
+          <button id="btn_remove7">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div8">
+        <h4>Mushroom Curry</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/mashroom curry.jpg" alt=""></div>
+          <button id="btn_remove8">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div9">
+        <h4>Mushroom Fry</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/mashrrom fry.jpg" alt=""></div>
+          <button id="btn_remove9">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div10">
+        <h4>Paneer Bt Masala</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/paneer-butter-masala.jpg" alt=""></div>
+          <button id="btn_remove10">Remove</button>
+      </div>
+      <div class="fev_div" id="fev_div11">
+        <h4>Paneer Tikka</h4>
+        
+        <div class="fev_img">
+         <img class="fev_img" src="./images/paneer tikka.jpg" alt=""></div>
+          <button id="btn_remove11">Remove</button>
+      </div>
+
+    </div>
 
     <div id="carouselExampleAutoplay" class="carousel slide"  data-bs-ride="carousel" data-bs-interval="2000">
       <div class="carousel-inner">
@@ -104,6 +188,7 @@
         </h5>
         <img src="./images/hyd dum b.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-Hyd-dum-b">click here</button>
+        <button id="btn_add1" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -111,6 +196,7 @@
         </h5>
         <img src="./images/dum b.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-dum-b">click here</button>
+        <button id="btn_add2" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -118,6 +204,7 @@
         </h5>
         <img src="./images/kolkatha b.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-kolkatta-b">click here</button>
+        <button id="btn_add3" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -125,6 +212,7 @@
         </h5>
         <img src="./images/chicken curry.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-chicken-cu">click here</button>
+        <button id="btn_add4" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -132,6 +220,7 @@
         </h5>
         <img src="./images/fish curry.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-fish-cu">click here</button>
+        <button id="btn_add5" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -139,6 +228,7 @@
         </h5>
         <img src="./images/mutton curry.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-mutton-cu">click here</button>
+        <button id="btn_add6" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -146,6 +236,7 @@
         </h5>
         <img src="./images/mutton-biryani.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-mutton-b">click here</button>
+        <button id="btn_add7" class="add_to_c">❤</button>
       </div>
     </div>
 
@@ -166,6 +257,7 @@
         </h5>
         <img src="./images/mashroom curry.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-mushroom-cu">click here</button>
+        <button id="btn_add8" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -173,6 +265,7 @@
         </h5>
         <img src="./images/mashrrom fry.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-mushroom_fry">click here</button>
+        <button id="btn_add9" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -180,6 +273,7 @@
         </h5>
         <img src="./images/paneer-butter-masala.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-paneer_masala">click here</button>
+        <button id="btn_add10" class="add_to_c">❤</button>
       </div>
       <div class="non-veg">
         <h5 style="text-align: center; font-family: 'Poppins', sans-serif">
@@ -187,6 +281,7 @@
         </h5>
         <img src="./images/paneer tikka.jpg" alt="" id="img" />
         <button class="btn-nonveg" id="btn-paneer-tikk">click here</button>
+        <button id="btn_add11" class="add_to_c">❤</button>
       </div>
     </div>
 
@@ -268,7 +363,8 @@
             "Mutton Biryani": "Mutton_Biryani.html",
             "Mutton Curry": "Mutton_Curry.html",
             "Paneer Butter Masala": "paneer_bt_masala.html",
-            "Paneer Tikka": "Paneer_Tikka.html"
+            "Paneer Tikka": "Paneer_Tikka.html",
+            "Fish Curry":"Fish_Curry.html"
         };
         
         function search() {
@@ -297,6 +393,137 @@
                 resultsDiv.style.display = "none";
             }
         }
-    </script>    </script>
+        
+
+        let side_bar=document.getElementById("side_bar");
+        let favourite_btn=document.getElementById("favourite_btn")
+        let close_btn=document.getElementById("btn_close")
+        let btn_remove1=document.getElementById("btn_remove1");
+        let fev_div1=document.getElementById("fev_div1")
+        let btn_remove2=document.getElementById("btn_remove2");
+        let fev_div2=document.getElementById("fev_div2")
+        let btn_remove3=document.getElementById("btn_remove3");
+        let fev_div3=document.getElementById("fev_div3")
+        let btn_remove4=document.getElementById("btn_remove4");
+        let fev_div4=document.getElementById("fev_div4")
+        let btn_remove5=document.getElementById("btn_remove5");
+        let fev_div5=document.getElementById("fev_div5")
+        let btn_remove6=document.getElementById("btn_remove6");
+        let fev_div6=document.getElementById("fev_div6")
+        let btn_remove7=document.getElementById("btn_remove7");
+        let fev_div7=document.getElementById("fev_div7")
+        let btn_remove8=document.getElementById("btn_remove8");
+        let fev_div8=document.getElementById("fev_div8")
+        let btn_remove9=document.getElementById("btn_remove9");
+        let fev_div9=document.getElementById("fev_div9")
+        let btn_remove10=document.getElementById("btn_remove10");
+        let fev_div10=document.getElementById("fev_div10")
+        let btn_remove11=document.getElementById("btn_remove11");
+        let fev_div11=document.getElementById("fev_div11")
+        let btn_add1=document.getElementById("btn_add1")
+
+
+
+        favourite_btn.addEventListener("click",()=>{
+          side_bar.style.display="inline-block";
+
+          
+
+        })
+        close_btn.addEventListener("click",()=>{
+          side_bar.style.display="none"
+
+        });
+        btn_remove1.addEventListener("click",()=>{
+
+          fev_div1.style.display="none";
+          
+
+        })
+        btn_remove2.addEventListener("click",()=>{
+
+        fev_div2.style.display="none";
+        })
+
+        btn_remove3.addEventListener("click",()=>{
+
+        fev_div3.style.display="none";
+        })
+       btn_remove4.addEventListener("click",()=>{
+
+       fev_div4.style.display="none";
+       })
+       btn_remove4.addEventListener("click",()=>{
+
+fev_div4.style.display="none";
+})
+btn_remove5.addEventListener("click",()=>{
+
+fev_div5.style.display="none";
+})
+btn_remove6.addEventListener("click",()=>{
+
+fev_div6.style.display="none";
+})
+btn_remove7.addEventListener("click",()=>{
+
+fev_div7.style.display="none";
+})
+btn_remove8.addEventListener("click",()=>{
+
+fev_div8.style.display="none";
+})
+btn_remove9.addEventListener("click",()=>{
+
+fev_div9.style.display="none";
+})
+btn_remove10.addEventListener("click",()=>{
+
+fev_div10.style.display="none";
+})
+btn_remove11.addEventListener("click",()=>{
+
+fev_div11.style.display="none";
+});
+btn_add1.addEventListener("click",()=>{
+  fev_div1.style.display="inline-block"
+})
+btn_add2.addEventListener("click",()=>{
+  fev_div2.style.display="inline-block"
+})
+btn_add3.addEventListener("click",()=>{
+  fev_div3.style.display="inline-block"
+})
+btn_add4.addEventListener("click",()=>{
+  fev_div4.style.display="inline-block"
+})
+btn_add5.addEventListener("click",()=>{
+  fev_div5.style.display="inline-block"
+})
+btn_add6.addEventListener("click",()=>{
+  fev_div6.style.display="inline-block"
+})
+btn_add7.addEventListener("click",()=>{
+  fev_div7.style.display="inline-block"
+})
+btn_add8.addEventListener("click",()=>{
+  fev_div8.style.display="inline-block"
+})
+btn_add9.addEventListener("click",()=>{
+  fev_div9.style.display="inline-block"
+})
+btn_add10.addEventListener("click",()=>{
+  fev_div10.style.display="inline-block"
+})
+btn_add11.addEventListener("click",()=>{
+  fev_div11.style.display="inline-block"
+})
+
+
+
+      
+
+
+    </script> 
   </body>
 </html>
