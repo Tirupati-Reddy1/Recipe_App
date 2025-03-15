@@ -1,9 +1,15 @@
 body {
-  background-image: url(./images/background-login.jpg);
+  background-image: url(./images/background-signup.jpg);
   background-position: center;
-    background-size: cover;
+    background-size:cover;
   
 }
+#logo{
+  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
 #regestration {
   border: 1px solid;
   width: 320px;
@@ -26,6 +32,7 @@ input {
   height: 30px;
   border-radius: 5px;
   background-color: transparent;
+  box-shadow: 0 0 1px;
 }
 #dhac {
   width: 200px;

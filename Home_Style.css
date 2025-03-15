@@ -4,9 +4,9 @@
   font-size: 30px;
   margin-left: 10px;
 }
-#fev_div_button{
-border: none;
-border-radius: 10px;
+#fev_div_button {
+  border: none;
+  border-radius: 10px;
 }
 #search {
   height: 30px;
@@ -17,6 +17,7 @@ border-radius: 10px;
   height: 100%;
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0 0 8px;
 }
 #container1 {
   display: flex;
@@ -45,13 +46,14 @@ border-radius: 10px;
   border-radius: 20px;
   width: 90px;
   left: 35%;
-  background-color: white;
   border: none;
 
-  color: rgb(47, 7, 193);
+  color: rgb(27, 166, 92);
 }
 .btn-nonveg:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 70px;
+  background-color: white;
 }
 .btn-nonveg:active {
   background-color: skyblue;
@@ -219,7 +221,7 @@ border-radius: 10px;
   position: absolute; /* Stays in place even when scrolling */
 
   width: 300px; /* Full width of the viewport */
-   /* Full height of the viewport */
+  /* Full height of the viewport */
   background-color: white; /* Semi-transparent background */
   z-index: 9999; /* Very high z-index to be on top */
 
@@ -231,11 +233,8 @@ border-radius: 10px;
   display: none;
   height: 50vh;
   overflow-y: scroll;
-  
-
-
 }
-.fev_div{
+.fev_div {
   display: none;
 
   height: 150px;
@@ -244,61 +243,55 @@ border-radius: 10px;
   align-items: center;
   justify-content: center;
   border: 1px solid;
-  font-family: 'Merriweather', serif;
-/* font-family: 'Playfair Display', serif; */
-/* font-family: 'Lora', serif; */
-color: white;
-width: 250px;
-margin: auto;
-border-radius: 10px;
-background-color: darkgrey;
-margin-top: 10px;
-display: none;
-
-
-
+  font-family: "Merriweather", serif;
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Lora', serif; */
+  color: white;
+  width: 250px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: darkgrey;
+  margin-top: 10px;
+  display: none;
 }
-.fev_img{
+.fev_img {
   margin-top: 7px;
   height: 50px;
   width: 60px;
   margin: auto;
   border-radius: 10px;
-
-  
 }
-.fev_div button{
+.fev_div button {
   height: 25px;
   font-size: 15px;
   margin-top: 15px;
   border-radius: 10px;
   margin-left: 35%;
 }
-#side_bar button{
-  font-family: 'Merriweather', serif;
+#side_bar button {
+  font-family: "Merriweather", serif;
   border-radius: 15px;
   border: none;
 }
-.fev_div button:active{
+.fev_div button:active {
   transform: scale(1.1);
 }
-.fev_div button:hover{
+.fev_div button:hover {
   transform: scale(1.1);
 }
-.add_to_c{
+.add_to_c {
   position: relative;
   top: -40px;
   left: 38%;
   border-radius: 10px;
   background-color: transparent;
 }
-.add_to_c:hover{
+.add_to_c:hover {
   transform: scale(1.1);
 }
-.add_to_c:active{
+.add_to_c:active {
   background-color: white;
 }
-.fev_div h4{
+.fev_div h4 {
   text-align: center;
 }
-
