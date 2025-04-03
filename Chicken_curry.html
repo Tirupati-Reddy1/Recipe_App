@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        background: linear-gradient(to right, #c9d5f6, #f8d7d7);
+      }
       #title {
         font-family: "Baloo 2", cursive;
         font-weight: 800;
@@ -95,19 +98,18 @@
         font-family: "Poppins", sans-serif;
         font-weight: 400;
       }
-      #btn{
+      #btn {
         width: 80px;
         border: none;
         box-shadow: 0 0 10px;
         border-radius: 5px;
-       
+
         display: block;
-  margin: auto;
-  margin-top: 20px;
-        
+        margin: auto;
+        margin-top: 20px;
       }
-      #btn:active{
-transform: scale(1.2);
+      #btn:active {
+        transform: scale(1.2);
       }
       @media (max-width: 480px) {
         #image {
@@ -143,10 +145,10 @@ transform: scale(1.2);
           border: none;
           color: rgb(85, 14, 29);
         }
-        #nutrition-div{
+        #nutrition-div {
           width: 80%;
         }
-        #making_process-div{
+        #making_process-div {
           width: 80%;
         }
       }
@@ -174,9 +176,9 @@ transform: scale(1.2);
     <button id="btn">Go Back</button>
 
     <script>
-      let btn=addEventListener("click",()=>{
-location.assign("loading_to_home.html")
-      })
+      let btn = addEventListener("click", () => {
+        location.assign("loading_to_home.html");
+      });
       let data = fetch("https://679ba48e33d3168463249d82.mockapi.io/items");
       data
         .then((x) => x.json())
@@ -193,8 +195,6 @@ location.assign("loading_to_home.html")
           let nutrition = document.getElementById("nutrition");
           nutrition.innerHTML = res[3].nutrition;
         });
-        
-      
     </script>
   </body>
 </html>

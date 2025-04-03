@@ -45,11 +45,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="messege.html">Contact Us</a>
+              <a id="Contactus" class="nav-link" href="loading_to_con.html">Contact Us</a>
             </li>
-            <button id="fev_div_button">Favourites</button>
+            <!-- <button id="fev_div_button">Favourites</button> -->
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Log out</a>
+              <a class="nav-link" href="#" onclick="favourites(); return false;">Wishlist</a>
+
+            </li>
+
+            <li class="nav-item">
+              <a id="logout" class="nav-link" href="index.html">Log out</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a
@@ -353,6 +358,8 @@
       btn_paneer_tikk.addEventListener("click", () => {
         location.assign("Paneer_Tikka.html");
       });
+
+      
       const itemPages = {
             "Chicken Dum Biryani": "Chicken_dum_b.html",
             "Chicken curry": "Chicken_curry.html",
@@ -424,12 +431,12 @@
 
 
 
-        favourite_btn.addEventListener("click",()=>{
+        // favourite_btn.addEventListener("click",()=>{
+        //   side_bar.style.display="inline-block";
+        // // })
+        function favourites(){
           side_bar.style.display="inline-block";
-
-          
-
-        })
+        }
         close_btn.addEventListener("click",()=>{
           side_bar.style.display="none"
 
@@ -536,5 +543,6 @@ btn_add11.addEventListener("click",()=>{
 
 
     </script> 
+   
   </body>
 </html>

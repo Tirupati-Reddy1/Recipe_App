@@ -1,3 +1,15 @@
+body{
+  background: linear-gradient(to right,
+  
+
+  #ada996
+  , 
+  #f2f2f2
+  , 
+  #dbdbdb
+  ,
+  #eaeaea);
+}
 .navbar-brand {
   color: #d2691e;
   font-family: "Brush Script MT", cursive;
@@ -130,7 +142,10 @@
   left: 0;
   width: 50%;
   border: 1px solid #ddd;
-  background: white;
+  background: linear-gradient(to right,
+  #e0eafc
+  ,
+  #cfdef3);
   display: none;
   z-index: 1;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -138,6 +153,7 @@
   flex-direction: column;
   text-align: center;
   display: none;
+
 }
 .result-item {
   padding: 10px;
@@ -247,6 +263,8 @@
   overflow-y: scroll;
 }
 .fev_div {
+  position: sticky;
+  top: 10px;
   display: none;
 
   height: 150px;
@@ -265,6 +283,7 @@
   background-color: darkgrey;
   margin-top: 10px;
   display: none;
+  
 }
 .fev_img {
   margin-top: 7px;

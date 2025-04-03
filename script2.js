@@ -1,4 +1,4 @@
-import {
+import{
   auth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -25,7 +25,10 @@ alrd.addEventListener("click", () => {
 });
 
 guestmode.addEventListener("click",()=>{
+  alert("Entering Through Guest Mode..!")
     location.assign("loading_effect.html");
+    
+    
 })
 
 signinform.addEventListener("submit",(e)=>{

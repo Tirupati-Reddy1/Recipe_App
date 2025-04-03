@@ -6,10 +6,17 @@
     <title>Document</title>
     <style>
       body {
-        background-image: url("/images/contact_us.jpg");
-        background-position: center;
-        background-size: cover;
+        /* background-image: url("/images/contact_us.jpg"); */
+        /* background-position: center;
+        background-size: cover; */
         margin-top: 200px;
+        background: linear-gradient(
+          to right,
+
+          #e8b9de,
+          #ede8d0,
+          #ceddee
+        );
       }
       #btn {
         width: 100px;
@@ -34,8 +41,10 @@
         justify-content: center;
         border-radius: 20px;
         width: 60%;
-        background-color: rgb(142, 149, 133);
+        /* background-color: rgb(142, 149, 133); */
+        background: transparent;
         margin-left: 50px;
+        box-shadow: 0 0 3px;
       }
       input {
         height: 5vh;
@@ -54,15 +63,15 @@
       #btn1 {
         margin-top: 30px;
         margin-top: 30px;
-          margin-left: 31%;
-          font-family: "Helvetica", sans-serif;
-          font-size: 14px;
-          color: #333;
-          width: 120px;
-          border-radius: 20px;
-          height: 30px;
-          border: none;
-          background-color: darkgray;
+        margin-left: 31%;
+        font-family: "Helvetica", sans-serif;
+        font-size: 14px;
+        color: #333;
+        width: 120px;
+        border-radius: 20px;
+        height: 30px;
+        border: none;
+        background-color: darkgray;
       }
       #btn1:active {
         border-color: crimson;
@@ -84,7 +93,7 @@
           margin-left: 20px;
           width: 80%;
         }
-        #btn1 {
+        /* #btn1 {
           margin-top: 30px;
           margin-left: 35%;
           font-family: "Helvetica", sans-serif;
@@ -94,17 +103,16 @@
           border-radius: 20px;
           height: 30px;
           border: none;
-          background-color: darkgray;
-        
-        }
+          background-color: dy;
+        } */
         #btn1:active {
-        border-color: crimson;
-        transform: scale(1.2);
-        background-color: rgb(215, 198, 206);
-      }
-      #btn1:hover {
-        transform: scale(1.1);
-      }
+          border-color: crimson;
+          transform: scale(1.2);
+          background-color: rgb(215, 198, 206);
+        }
+        #btn1:hover {
+          transform: scale(1.1);
+        }
       }
     </style>
   </head>
@@ -132,7 +140,7 @@
 
     <script>
       let frm = document.getElementById("form");
-      let btn1= document.getElementById("btn1");
+      let btn1 = document.getElementById("btn1");
 
       frm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -145,9 +153,9 @@
         localStorage.setItem("data", JSON.stringify(data));
         alert("Messege Sent Successful");
       });
-      btn1.addEventListener("click",()=>{
-        location.assign("home.html")
-      })
+      btn1.addEventListener("click", () => {
+        location.assign("home.html");
+      });
     </script>
   </body>
 </html>

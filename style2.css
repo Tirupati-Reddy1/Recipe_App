@@ -1,7 +1,8 @@
 body {
-  background-image: url(./images/background-signup.jpg);
-  background-position: center;
-    background-size:cover;
+  /* background-image: url(./images/background-signup.jpg); */
+  /* background-position: center;
+    background-size:cover; */
+    background: linear-gradient(to right, #dae2f8,#d6a4a4);
   
 }
 #logo{
@@ -69,11 +70,11 @@ input {
   color: white;
 }
 #btn_signin:hover {
-  background-color: green;
+  background-color: rgb(16, 118, 220);
   color: white;
 }
 #btn_guest:hover {
-  background-color: green;
+  background-color:rgb(16, 118, 220);
   color: white;
 }
 #dhac:hover {
